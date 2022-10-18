@@ -56,7 +56,6 @@ bench_run(const EVP_CIPHER *cipher, size_t total_size, size_t block_size)
     unsigned char   iv[12]  = { 0 };
     unsigned char   key[32] = { 0 };
     unsigned char   ad[13]  = { 0 };
-    unsigned char   tag[16];
     unsigned char  *buf;
     size_t          rounds = total_size / block_size;
     uint64_t        start, duration;
@@ -73,8 +72,8 @@ bench_run(const EVP_CIPHER *cipher, size_t total_size, size_t block_size)
         EVP_EncryptInit_ex(ctx, NULL, NULL, NULL, iv);
         EVP_EncryptUpdate(ctx, NULL, &len, ad, (int) sizeof ad);
         EVP_EncryptUpdate(ctx, buf, &len, buf, (int) block_size);
-        EVP_EncryptFinal_ex(ctx, tag, &len);
-        __asm__ __volatile__("" : : "r"(tag) : "memory");
+        EVP_EncryptFinal_ex(ctx, buf, &len);
+        __asm__ __volatile__("" : : "r"(buf) : "memory");
     }
     duration = time_now() - start;
 
