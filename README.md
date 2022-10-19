@@ -31,6 +31,6 @@ Y axis is the throughput in Mib/s. Higher is better.
 
 [Source code](cryptobench-aegis.c), linked against BoringSSL with [AEGIS-128L](https://github.com/jedisct1/boringssl/tree/aegis) support.
 
-Uses BoringSSL's dedicated AEAD API.
+Uses BoringSSL's dedicated AEAD API. Higher is better.
 
 ![BoringSSL benchmark](img/boring-aeads.png)
