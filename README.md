@@ -29,9 +29,9 @@ Y axis is the throughput in Mib/s. Higher is better.
 
 ## Key exchange
 
-ECDH over p256 ([Source code](cryptobench-ecdh.c))
+ECDH over p256 and p384 ([Source code](cryptobench-ecdh.c))
 
-![ECDH over p256 results](img/p256.png)
+![ECDH over p256 and p384 results](img/ecdh.png)
 
 ## Comparing BoringSSL AEADs
 
