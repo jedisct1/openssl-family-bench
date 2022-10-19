@@ -27,6 +27,12 @@ Y axis is the throughput in Mib/s. Higher is better.
 
 ![AES-256-CBC](img/aes-256-cbc.png)
 
+## Key exchange
+
+ECDH over p256 ([Source code](cryptobench-ecdh.c))
+
+![ECDH over p256 results](img/p256.png)
+
 ## Comparing BoringSSL AEADs
 
 [Source code](cryptobench-aegis.c), linked against BoringSSL with [AEGIS-128L](https://github.com/jedisct1/boringssl/tree/aegis) support.
