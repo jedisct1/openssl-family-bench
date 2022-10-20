@@ -33,6 +33,12 @@ ECDH over p256 and p384 ([Source code](cryptobench-ecdh.c))
 
 ![ECDH over p256 and p384 results](img/ecdh.png)
 
+## RSA
+
+RSA signatures ([Source code](cryptobench-rsa.c))
+
+![RSA signatures results](img/rsa.png)
+
 ## Comparing BoringSSL AEADs
 
 [Source code](cryptobench-aegis.c), linked against BoringSSL with [AEGIS-128L](https://github.com/jedisct1/boringssl/tree/aegis) support.
