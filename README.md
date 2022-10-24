@@ -35,9 +35,13 @@ ECDH over p256 and p384 ([Source code](cryptobench-ecdh.c))
 
 ## RSA
 
-RSA signatures ([Source code](cryptobench-rsa.c))
+### RSA signature ([Source code](cryptobench-rsa.c))
 
-![RSA signatures results](img/rsa.png)
+![RSA signature results](img/rsa.png)
+
+### RSA verification ([Source code](cryptobench-rsa-verification.c))
+
+![RSA verification results](img/rsa-verification.png)
 
 ## Comparing BoringSSL AEADs
 
